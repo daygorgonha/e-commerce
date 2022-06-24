@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:layouts_no_flutter/pages/widgets/category/category-list.widget.dart';
-import 'package:layouts_no_flutter/pages/widgets/product/product-list.widget.dart';
-import 'package:layouts_no_flutter/pages/widgets/search-box.widget.dart';
+import 'package:layouts_no_flutter/widgets/category/category-list.widget.dart';
+import 'package:layouts_no_flutter/widgets/product/product-list.widget.dart';
+
+import 'package:layouts_no_flutter/widgets/search-box.widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
