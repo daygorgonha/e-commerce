@@ -9,7 +9,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.all(15),
-        color: Color(0xFFF5F5F5),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
@@ -22,9 +21,7 @@ class HomePage extends StatelessWidget {
             ),
             Text(
               "Categories",
-              style: TextStyle(
-                fontSize: 30,
-              ),
+              style: Theme.of(context).textTheme.headline5,
             ),
             SizedBox(
               height: 10,
@@ -41,13 +38,15 @@ class HomePage extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Best Selling",
-                  style: TextStyle(
-                    fontSize: 30,
-                  ),
+                  style: Theme.of(context).textTheme.headline5,
                 ),
-                FlatButton(
-                  child: Text("See All"),
-                  onPressed: () {},
+                Container(
+                  height: 20,
+                  alignment: Alignment.centerRight,
+                  child: FlatButton(
+                    child: Text("See All"),
+                    onPressed: () {},
+                  ),
                 ),
               ],
             ),
